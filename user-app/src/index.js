@@ -1,6 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
+import SportListContainer from "./containers/sport-list-container";
+
 import reducers from "./reducers/index";
 
 import { Provider } from "react-redux";
@@ -10,11 +12,13 @@ import thunk from "redux-thunk";
 const store = createStore(reducers, applyMiddleware(thunk));
 
 
+//Encyclopedia App
 class App extends React.Component {
     render() {
         return (
             <div>
-                User-App test
+                App Working
+                <SportListContainer/>
             </div>
         )
     }

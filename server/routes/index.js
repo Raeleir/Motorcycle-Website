@@ -1,44 +1,44 @@
 const express = require("express");
-const Bike = require("../models/index.js");
+const Sport = require("../models/index.js");
 
-const bikeRouter = express.Router();
+const sportRouter = express.Router();
 
 
-bikeRouter.post("/", (req, res) => {
-    let newBike = new Bike(req.body);
-    newBike.save((err, data) => {
+sportRouter.post("/", (req, res) => {
+    let newSport = new Sport(req.body);
+    newSport.save((err, data) => {
         err ? res.status(500).send({ message: "Server Error", err})
             : res.status(201).send({ message: "Item Successfully Posted", data});
     })
 });
 
-bikeRouter.get("/", (req, res) => {
-    Bike.find(req.query, (err, data) => {
+sportRouter.get("/", (req, res) => {
+    Sport.find(req.query, (err, data) => {
         err ? res.status(500).send({ message: "Server Error", err})
             : res.status(200).send({ message: "Items Successfully Retrieved", data});
     })
 });
 
-bikeRouter.get("/:id", (req, res) => {
-    Bike.findOne({"_id": req.params.id}, (err, data) => {
+sportRouter.get("/:id", (req, res) => {
+    Sport.findOne({"_id": req.params.id}, (err, data) => {
         err ? res.status(500).send({ message: "Server Error", err})
             : res.status(200).send({ message: "Item Successfully Retrieved", data});
     })
 });
 
-bikeRouter.put("/", (req, res) => {
-    Bike.findByIdAndUpdate({"_id": req.params.id}, req.body, {new: true}, (err, data) => {
+sportRouter.put("/:id", (req, res) => {
+    Sport.findByIdAndUpdate({"_id": req.params.id}, req.body, {new: true}, (err, data) => {
         err ? res.status(500).send({ message: "Server Error", err})
             : res.status(200).send({ message: "Item Successfully Updated", data});
     })
 });
 
-bikeRouter.delete("/", (req, res) => {
-    Bike.findByIdAndRemove({"_id": req.params.id}, (err, data) => {
+sportRouter.delete("/:id", (req, res) => {
+    Sport.findByIdAndRemove({"_id": req.params.id}, (err, data) => {
         err ? res.status(500).send({ message: "Server Error", err})
             : res.status(200).send({ message: "Item Successfully Removed", data});
     })
 });
 
 
-module.exports = bikeRouter;
+module.exports = sportRouter;
