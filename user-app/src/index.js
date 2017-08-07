@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { Route, BrowserRouter, Switch } from "react-router-dom";
 
 import SportListContainer from "./containers/sport-list-container";
 
@@ -8,17 +9,26 @@ import reducers from "./reducers/index";
 import { Provider } from "react-redux";
 import { createStore, applyMiddleware } from "redux";
 import thunk from "redux-thunk";
+import CustomNavbar from "./components/navbar";
+import EncyclopediaHome from "./components/encyclo-home";
 
 const store = createStore(reducers, applyMiddleware(thunk));
 
 
-//Encyclopedia App
+//Explore Wing
 class App extends React.Component {
     render() {
         return (
             <div>
-                App Working
-                <SportListContainer/>
+                <BrowserRouter>
+                    <div>
+                        <CustomNavbar/>
+                        <Switch>
+                            <Route exact path="/" component={EncyclopediaHome}/>
+                            <Route exact path="/sports" component={SportListContainer}/>
+                        </Switch>
+                    </div>
+                </BrowserRouter>
             </div>
         )
     }

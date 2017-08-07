@@ -12,7 +12,6 @@ class SportList extends React.Component {
     render() {
         return (
             <div>
-                SportList Working
                 {this.genSport()}
             </div>
         )

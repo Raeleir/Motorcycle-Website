@@ -12,7 +12,6 @@ class SportListContainer extends React.Component {
     render() {
         return (
             <div>
-                SportListContainer Working
                 <SportList sports={this.props.sports} />
             </div>
         )

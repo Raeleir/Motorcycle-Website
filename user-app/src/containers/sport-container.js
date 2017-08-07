@@ -7,7 +7,6 @@ class SportContainer extends React.Component {
     render() {
         return (
             <div>
-                SportContainer Working
                 <Sport sport={this.props.sport} />
             </div>
         )
