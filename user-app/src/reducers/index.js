@@ -1,18 +1,20 @@
 let defaultState = {
-    sports: [
+    bikes: [
         {
+            pic: "",
             make: "",
             model: "",
             msrp: 0,
             cc: 0,
-            engine: ""
+            engine: "",
+            category: ""
         }
     ]
 };
 
 const mainReducer = (state = defaultState, action) => {
     return action.type === "SET_DATA"
-        ? { ...state, sports: action.data }
+        ? { ...state, bikes: action.data }
         : { ...state };
 };
 

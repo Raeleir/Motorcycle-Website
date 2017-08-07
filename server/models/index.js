@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const sportSchema = new Schema({
+const bikeSchema = new Schema({
     pic: {
         type: String,
         required: true
@@ -25,7 +25,11 @@ const sportSchema = new Schema({
     engine: {
         type: String,
         required: true
+    },
+    category: {
+        type: String,
+        required: true
     }
 });
 
-module.exports = mongoose.model(`sports`, sportSchema);
+module.exports = mongoose.model(`bikes`, bikeSchema);

@@ -8,7 +8,7 @@ class CustomNavbar extends React.Component {
         return (
             <div>
                 <Link to="/">Home</Link>
-                <Link to="/sports">Sports</Link>
+                <Link to="/race">Race</Link>
             </div>
         )
     }

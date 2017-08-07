@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { Route, BrowserRouter, Switch } from "react-router-dom";
 
-import SportListContainer from "./containers/sport-list-container";
+import RaceListContainer from "./containers/race-list-container";
 
 import reducers from "./reducers/index";
 
@@ -25,7 +25,7 @@ class App extends React.Component {
                         <CustomNavbar/>
                         <Switch>
                             <Route exact path="/" component={EncyclopediaHome}/>
-                            <Route exact path="/sports" component={SportListContainer}/>
+                            <Route exact path="/race" component={RaceListContainer}/>
                         </Switch>
                     </div>
                 </BrowserRouter>
