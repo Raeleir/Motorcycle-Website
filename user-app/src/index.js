@@ -2,15 +2,16 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { Route, BrowserRouter, Switch } from "react-router-dom";
 
-import RaceListContainer from "./containers/race-list-container";
+import "./index.css";
 
 import reducers from "./reducers/index";
 
 import { Provider } from "react-redux";
 import { createStore, applyMiddleware } from "redux";
 import thunk from "redux-thunk";
-import CustomNavbar from "./components/navbar";
-import EncyclopediaHome from "./components/encyclo-home";
+import Encyclopedia from "./components/encyclopedia";
+import RaceListContainer from "./containers/race-list-container";
+import Home from "./components/home";
 
 const store = createStore(reducers, applyMiddleware(thunk));
 
@@ -22,10 +23,10 @@ class App extends React.Component {
             <div>
                 <BrowserRouter>
                     <div>
-                        <CustomNavbar/>
                         <Switch>
-                            <Route exact path="/" component={EncyclopediaHome}/>
-                            <Route exact path="/race" component={RaceListContainer}/>
+                            <Route exact path="/" component={Home}/>
+                            <Route exact path="/encyclopedia" component={Encyclopedia}/>
+                            <Route exact path="/encyclopedia/race" component={RaceListContainer}/>
                         </Switch>
                     </div>
                 </BrowserRouter>

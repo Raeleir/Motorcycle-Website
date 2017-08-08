@@ -5,7 +5,7 @@ class RaceLiter extends React.Component {
     render() {
         return (
             <div>
-                <img src={this.props.bike.pic}/>
+                <img alt="" src={this.props.bike.pic}/>
                 <ul>
                     <li>{this.props.bike.make}</li>
                     <li>{this.props.bike.model}</li>

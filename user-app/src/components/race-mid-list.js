@@ -4,7 +4,7 @@ import RaceMidContainer from "../containers/race-mid-container";
 
 
 class RaceMidList extends React.Component {
-    genraceMids() {
+    genRaceMids() {
         return this.props.raceMids.map((bike, index) => {
             return <RaceMidContainer key={bike.model + index} bike={bike} />
         })
@@ -12,7 +12,7 @@ class RaceMidList extends React.Component {
     render() {
         return (
             <div>
-                {this.genraceMids()}
+                {this.genRaceMids()}
             </div>
         )
     }

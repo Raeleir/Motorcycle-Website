@@ -4,6 +4,8 @@ import { connect } from "react-redux";
 import * as actionCreators from "../actions/";
 import RaceMidList from "../components/race-mid-list";
 import RaceLiterList from "../components/race-liter-list";
+import CustomNavbar from "../components/navbar";
+
 
 
 class SportListContainer extends React.Component {
@@ -13,6 +15,7 @@ class SportListContainer extends React.Component {
     render() {
         return (
             <div>
+                <CustomNavbar/>
                 <h1>Race Replicas</h1>
                 <h2>Middleweights</h2>
                 <RaceMidList raceMids={this.props.bikes.filter((bike) => {

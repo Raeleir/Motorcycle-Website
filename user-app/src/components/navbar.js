@@ -1,6 +1,8 @@
 import React from "react";
-import { Nav, Navbar, NavItem } from "react-bootstrap";
+import { Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
+
+
 class CustomNavbar extends React.Component {
     render() {
         return (
@@ -14,7 +16,10 @@ class CustomNavbar extends React.Component {
                 <Navbar.Collapse>
                     <Nav pullRight>
                         <li>
-                            <Link to="/race">Race</Link>
+                            <Link to="/encyclopedia">Encyclopedia</Link>
+                        </li>
+                        <li>
+                            <Link to="/encyclopedia/race">Race</Link>
                         </li>
                     </Nav>
                 </Navbar.Collapse>
