@@ -16,3 +16,33 @@ export function loadData() {
         })
     }
 }
+
+export function addData(data) {
+    return (dispatch) => {
+        return axios.post(`http://localhost:8080/bikes/`, data).then((response) => {
+            dispatch(loadData());
+        }).catch((err) => {
+            throw err;
+        })
+    }
+}
+
+export function updateData(id, data) {
+    return (dispatch) => {
+        return axios.put(`http://localhost:8080/bikes/${id}`, data).then((response) => {
+            dispatch(loadData());
+        }).catch((err) => {
+            throw err;
+        })
+    }
+}
+
+export function deleteData(id) {
+    return (dispatch) => {
+        return axios.delete(`http://localhost:8080/bikes/${id}`).then((response) => {
+            dispatch(loadData());
+        }).catch((err) => {
+            throw err;
+        })
+    }
+}

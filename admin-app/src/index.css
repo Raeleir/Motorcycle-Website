@@ -86,3 +86,11 @@ p {
 .spotlight a:hover {
     letter-spacing: 3px;
 }
+
+input {
+    width: 60px;
+}
+
+input, button {
+    color: black;
+}
