@@ -1,0 +1,88 @@
+* {
+    color: white;
+    text-align: center;
+}
+
+.navbar {
+    background-color: transparent !important;
+    border: 0;
+}
+
+.navbar a {
+    color: white !important;
+}
+
+.wrapper, .wrapper-home {
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper-home {
+    height: 100vh;
+}
+
+.wrapper {
+    height: 75vh;
+}
+
+#overlay, .overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100%;
+}
+
+section {
+    position: relative;
+    text-align: center;
+    color: white;
+    top: 25vh;
+}
+
+.half-rule {
+    width: 100px;
+    margin: 40px auto;
+}
+
+.half-rule-narrow {
+    width: 50px;
+    margin: 40px auto;
+}
+
+.zero, .one {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.zero {
+    background-color: #2a2730;
+}
+
+.one {
+    background-color: #3f3a48;
+}
+
+.image {
+    border-radius: 3px;
+}
+
+p {
+    text-align: justify;
+}
+
+.spotlight {
+    opacity: .3;
+    transition: opacity .3s ease;
+}
+
+.spotlight:hover {
+    opacity: 1;
+}
+
+.spotlight a {
+    text-decoration: none;
+    text-underline-style: none;
+    transition: letter-spacing .3s ease;
+}
+
+.spotlight a:hover {
+    letter-spacing: 3px;
+}

@@ -26,7 +26,7 @@
 }
 
 #overlay, .overlay {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.4);
     height: 100%;
 }
 
@@ -37,16 +37,14 @@ section {
     top: 25vh;
 }
 
-.half-rule, .half-rule-narrow {
-    width: 100px;
-}
-
 .half-rule {
+    width: 100px;
     margin: 40px auto;
 }
 
 .half-rule-narrow {
-    margin: 20px auto;
+    width: 50px;
+    margin: 40px auto;
 }
 
 .zero, .one {
@@ -62,15 +60,29 @@ section {
     background-color: #3f3a48;
 }
 
-img {
+.image {
     border-radius: 3px;
-    transition: opacity .3s ease;
-}
-
-img:hover {
-    opacity: .7;
 }
 
 p {
     text-align: justify;
+}
+
+.spotlight {
+    opacity: .3;
+    transition: opacity .3s ease;
+}
+
+.spotlight:hover {
+    opacity: 1;
+}
+
+.spotlight a {
+    text-decoration: none;
+    text-underline-style: none;
+    transition: letter-spacing .3s ease;
+}
+
+.spotlight a:hover {
+    letter-spacing: 3px;
 }

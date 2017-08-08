@@ -5,15 +5,11 @@ import { Col } from "react-bootstrap";
 class RaceMid extends React.Component {
     render() {
         return (
-            <Col md={4}>
+            <Col md={4} className="spotlight">
                 <img className="img-responsive" alt="" src={this.props.bike.pic}/>
-                <ul>
-                    <li>{this.props.bike.make}</li>
-                    <li>{this.props.bike.model}</li>
-                    <li>{this.props.bike.msrp}</li>
-                    <li>{this.props.bike.cc}</li>
-                    <li>{this.props.bike.engine}</li>
-                </ul>
+                <h3>{this.props.bike.make} | {this.props.bike.model}</h3>
+                <h5>${this.props.bike.msrp} | {this.props.bike.cc}cc | {this.props.bike.engine}</h5>
+                <a href={this.props.bike.link}><h7>More...</h7></a>
             </Col>
         )
     }

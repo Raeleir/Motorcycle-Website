@@ -7,6 +7,7 @@ let defaultState = {
             msrp: 0,
             cc: 0,
             engine: "",
+            link: "",
             category: ""
         }
     ]
