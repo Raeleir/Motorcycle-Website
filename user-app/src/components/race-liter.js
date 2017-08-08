@@ -1,11 +1,12 @@
 import React from "react";
+import { Col } from "react-bootstrap";
 
 
 class RaceLiter extends React.Component {
     render() {
         return (
-            <div>
-                <img alt="" src={this.props.bike.pic}/>
+            <Col md={4}>
+                <img className="img-responsive" alt="" src={this.props.bike.pic}/>
                 <ul>
                     <li>{this.props.bike.make}</li>
                     <li>{this.props.bike.model}</li>
@@ -13,7 +14,7 @@ class RaceLiter extends React.Component {
                     <li>{this.props.bike.cc}</li>
                     <li>{this.props.bike.engine}</li>
                 </ul>
-            </div>
+            </Col>
         )
     }
 }

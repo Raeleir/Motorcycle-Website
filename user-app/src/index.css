@@ -1,27 +1,6 @@
-.wrapper {
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-}
-
-.overlay {
-    background-color: rgba(0, 0, 0, 0.3);
-    height: 100vh;
-}
-
-.overlay section {
-    position: relative;
-    text-align: center;
-    top: 25vh;
+* {
     color: white;
-}
-
-.overlay h2 {
-    font-size: 7em;
-}
-
-.overlay p {
-    font-size: 3em;
+    text-align: center;
 }
 
 .navbar {
@@ -31,4 +10,67 @@
 
 .navbar a {
     color: white !important;
+}
+
+.wrapper, .wrapper-home {
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper-home {
+    height: 100vh;
+}
+
+.wrapper {
+    height: 75vh;
+}
+
+#overlay, .overlay {
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 100%;
+}
+
+section {
+    position: relative;
+    text-align: center;
+    color: white;
+    top: 25vh;
+}
+
+.half-rule, .half-rule-narrow {
+    width: 100px;
+}
+
+.half-rule {
+    margin: 40px auto;
+}
+
+.half-rule-narrow {
+    margin: 20px auto;
+}
+
+.zero, .one {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.zero {
+    background-color: #2a2730;
+}
+
+.one {
+    background-color: #3f3a48;
+}
+
+img {
+    border-radius: 3px;
+    transition: opacity .3s ease;
+}
+
+img:hover {
+    opacity: .7;
+}
+
+p {
+    text-align: justify;
 }
