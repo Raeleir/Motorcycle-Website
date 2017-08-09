@@ -12,6 +12,8 @@ import thunk from "redux-thunk";
 import Encyclopedia from "./components/encyclopedia";
 import Race from "./containers/race";
 import Home from "./components/home";
+import Commute from "./containers/commute";
+import Naked from "./containers/naked";
 
 const store = createStore(reducers, applyMiddleware(thunk));
 
@@ -25,8 +27,10 @@ class App extends React.Component {
                     <div>
                         <Switch>
                             <Route exact path="/" component={Home}/>
-                            <Route exact path="/encyclopedia" component={Encyclopedia}/>
+                            <Route exact path="/encyclopedia/" component={Encyclopedia}/>
                             <Route exact path="/encyclopedia/race" component={Race}/>
+                            <Route exact path="/encyclopedia/commute" component={Commute}/>
+                            <Route exact path="/encyclopedia/naked" component={Naked}/>
                         </Switch>
                     </div>
                 </BrowserRouter>

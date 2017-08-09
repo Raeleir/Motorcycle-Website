@@ -18,13 +18,13 @@ class Home extends React.Component {
                         <Navbar.Collapse>
                             <Nav pullRight>
                                 <li>
-                                    <Link to="/encyclopedia">ENCYCLOPEDIA</Link>
+                                    <Link to="/encyclopedia">Encyclopedia</Link>
                                 </li>
                                 <li>
-                                    <Link to="/">LEARNING</Link>
+                                    <Link to="/">Learning</Link>
                                 </li>
                                 <li>
-                                    <Link to="/">MAINTENANCE</Link>
+                                    <Link to="/">Maintenance</Link>
                                 </li>
                             </Nav>
                         </Navbar.Collapse>
@@ -32,7 +32,7 @@ class Home extends React.Component {
                     <section>
                         <h1>La CABALLERIZA</h1>
                         <hr className="half-rule"/>
-                        <h3>A Motorcycle Resource</h3>
+                        <h3 className="sub-heading">A Motorcycle Resource</h3>
                     </section>
                 </div>
             </div>

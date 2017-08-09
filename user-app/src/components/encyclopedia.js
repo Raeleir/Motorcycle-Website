@@ -18,7 +18,7 @@ class Encyclopedia extends React.Component {
                         <section>
                             <h1>ENCYCLOPEDIA</h1>
                             <hr className="half-rule"/>
-                            <h3>Categorizing Our Two-Wheeled Steeds</h3>
+                            <h3 className="sub-heading">Categorizing Our Two-Wheeled Steeds</h3>
                         </section>
                     </div>
                 </div>
@@ -54,7 +54,7 @@ class Encyclopedia extends React.Component {
                                 </p>
                             </Col>
                             <Col md={4}>
-                                <Link to="/encyclopedia/race">
+                                <Link to="/encyclopedia/commute">
                                     <img className="img-responsive image" alt=""
                                          src="http://bikeadvice.in/wp-content/uploads/2016/11/Honda-CBR-650F-images-4.jpg"
                                     />
@@ -66,7 +66,7 @@ class Encyclopedia extends React.Component {
                                 </p>
                             </Col>
                             <Col md={4}>
-                                <Link to="/encyclopedia/race">
+                                <Link to="/encyclopedia/naked">
                                     <img className="img-responsive image" alt=""
                                          src="http://images.motorcycle-usa.com/PhotoGallerys/Ducati-Monster-821-4.jpg"
                                     />

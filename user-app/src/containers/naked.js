@@ -7,8 +7,7 @@ import BikeList from "../components/bike-list";
 import EncycloNavbar from "../components/navbar";
 
 
-
-class Race extends React.Component {
+class Naked extends React.Component {
     componentWillMount() {
         this.props.loadData();
     }
@@ -16,19 +15,36 @@ class Race extends React.Component {
         return (
             <div>
                 <div className="wrapper" style={
-                    {backgroundImage: "url('http://geodavephotography.com/images/motogp-wallpaper/37783534-motogp-wallpaper.jpg')"}
+                    {backgroundImage: "url('https://i.ytimg.com/vi/ko1VvxNXoAw/maxresdefault.jpg')"}
                 }>
                     <div className="overlay">
                         <EncycloNavbar/>
                         <section>
-                            <h1>Race Replica</h1>
+                            <h1>Naked</h1>
                             <hr className="half-rule"/>
-                            <h3 className="sub-heading">Professional Race Machines, Made Street-Legal Production Motorcycles</h3>
+                            <h3 className="sub-heading">Commuter Motorcycles, Made Without Fairings for Style and/or Price</h3>
                         </section>
                     </div>
                 </div>
 
                 <div className="zero">
+                    <Grid>
+                        <Row>
+                            <Col md={8} mdOffset={2}>
+                                <h2>Entry Level</h2>
+                                <h4>Engine Size 250cc+</h4>
+                            </Col>
+                        </Row>
+                        <hr className="half-rule"/>
+                        <Row>
+                            <BikeList bikes={this.props.bikes.filter((bike) => {
+                                return bike.category === "naked entry";
+                            })}/>
+                        </Row>
+                    </Grid>
+                </div>
+
+                <div className="one">
                     <Grid>
                         <Row>
                             <Col md={8} mdOffset={2}>
@@ -39,13 +55,13 @@ class Race extends React.Component {
                         <hr className="half-rule"/>
                         <Row>
                             <BikeList bikes={this.props.bikes.filter((bike) => {
-                                return bike.category === "race mid";
+                                return bike.category === "naked mid";
                             })}/>
                         </Row>
                     </Grid>
                 </div>
 
-                <div className="one">
+                <div className="zero">
                     <Grid>
                         <Row>
                             <Col md={8} mdOffset={2}>
@@ -56,7 +72,7 @@ class Race extends React.Component {
                         <hr className="half-rule"/>
                         <Row>
                             <BikeList bikes={this.props.bikes.filter((bike) => {
-                                return bike.category === "race liter";
+                                return bike.category === "naked liter";
                             })} />
                         </Row>
                     </Grid>
@@ -70,4 +86,4 @@ const mapStateToProps = (state) => {
     return state;
 };
 
-export default connect(mapStateToProps, actionCreators)(Race);
+export default connect(mapStateToProps, actionCreators)(Naked);

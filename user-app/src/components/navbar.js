@@ -9,32 +9,32 @@ class EncycloNavbar extends React.Component {
             <Navbar collapseOnSelect>
                 <Navbar.Header>
                     <Navbar.Brand>
-                        <Link to="/">HOME</Link>
+                        <Link to="/">Home</Link>
                     </Navbar.Brand>
                     <Navbar.Toggle />
                 </Navbar.Header>
                 <Navbar.Collapse>
                     <Nav pullRight>
                         <li>
-                            <Link to="/encyclopedia">ENCYCLOPEDIA</Link>
+                            <Link to="/encyclopedia">Encyclopedia</Link>
                         </li>
                         <li>
-                            <Link to="/encyclopedia/race">RACE</Link>
+                            <Link to="/encyclopedia/race">Race</Link>
                         </li>
                         <li>
-                            <Link to="/encyclopedia/">COMMUTE</Link>
+                            <Link to="/encyclopedia/commute">Commute</Link>
                         </li>
                         <li>
-                            <Link to="/encyclopedia/">NAKED</Link>
+                            <Link to="/encyclopedia/naked">Naked</Link>
                         </li>
                         <li>
-                            <Link to="/encyclopedia/">CRUISER</Link>
+                            <Link to="/encyclopedia/">Cruiser</Link>
                         </li>
                         <li>
-                            <Link to="/encyclopedia/">STANDARD</Link>
+                            <Link to="/encyclopedia/">Standard</Link>
                         </li>
                         <li>
-                            <Link to="/encyclopedia/">TOURER</Link>
+                            <Link to="/encyclopedia/">Tourer</Link>
                         </li>
                     </Nav>
                 </Navbar.Collapse>

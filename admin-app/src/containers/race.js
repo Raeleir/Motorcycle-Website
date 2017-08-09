@@ -29,6 +29,8 @@ class Race extends React.Component {
                     </div>
                 </div>
 
+                <FormContainer/>
+
                 <div className="zero">
                     <Grid>
                         <Row>
@@ -66,7 +68,6 @@ class Race extends React.Component {
                         </Row>
                     </Grid>
                 </div>
-                <FormContainer/>
             </div>
         )
     }

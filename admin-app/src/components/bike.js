@@ -9,7 +9,7 @@ class Bike extends React.Component {
                 <div className="pics" style={{backgroundImage: `url(${this.props.bike.pic})`}}/>
                 <input className="img-input" onChange={(event) => {
                         this.props.handleChange("pic", event);
-                    }} placeholder="pic url" value={this.props.input.pic}
+                    }} placeholder="https://cdn.shopify.com/s/files/1/0333/0021/products/2017_HONDA_CBR1000RR_600x400_RedBlackWhite_trans_CENTRAL_FLORIDA_POWERSPORTS.png?v=1478626674" value={this.props.input.pic}
                 />
 
                 <h3>{this.props.bike.make} | {this.props.bike.model}</h3>
