@@ -33,7 +33,7 @@ class Race extends React.Component {
                     <Grid>
                         <Row>
                             <Col md={8} mdOffset={2}>
-                                <h2>MIDDLEWEIGHT</h2>
+                                <h2>Middleweight</h2>
                                 <h4>Engine Size 600cc+</h4>
                             </Col>
                         </Row>
@@ -52,7 +52,7 @@ class Race extends React.Component {
                     <Grid>
                         <Row>
                             <Col md={8} mdOffset={2}>
-                                <h2>LITERBIKE</h2>
+                                <h2>Literbike</h2>
                                 <h4>Engine Size 1000cc+</h4>
                             </Col>
                         </Row>

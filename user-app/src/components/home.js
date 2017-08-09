@@ -11,27 +11,27 @@ class Home extends React.Component {
                     <Navbar collapseOnSelect>
                         <Navbar.Header>
                             <Navbar.Brand>
-                                <a href="https://github.com/Raeleir">About</a>
+                                <a href="https://github.com/Raeleir">about me</a>
                             </Navbar.Brand>
                             <Navbar.Toggle />
                         </Navbar.Header>
                         <Navbar.Collapse>
                             <Nav pullRight>
                                 <li>
-                                    <Link to="/encyclopedia">Encyclopedia</Link>
+                                    <Link to="/encyclopedia">ENCYCLOPEDIA</Link>
                                 </li>
                                 <li>
-                                    <Link to="/">Learning</Link>
+                                    <Link to="/">LEARNING</Link>
                                 </li>
                                 <li>
-                                    <Link to="/">Maintenance</Link>
+                                    <Link to="/">MAINTENANCE</Link>
                                 </li>
                             </Nav>
                         </Navbar.Collapse>
                     </Navbar>
                     <section>
-                        <h1>La Caballeriza</h1>
-                        <hr className="half-rule-narrow"/>
+                        <h1>La CABALLERIZA</h1>
+                        <hr className="half-rule"/>
                         <h3>A Motorcycle Resource</h3>
                     </section>
                 </div>

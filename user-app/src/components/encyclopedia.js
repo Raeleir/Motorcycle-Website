@@ -16,8 +16,8 @@ class Encyclopedia extends React.Component {
                     <div className="overlay">
                         <EncycloNavbar/>
                         <section>
-                            <h1>Encyclopedia</h1>
-                            <hr className="half-rule-narrow"/>
+                            <h1>ENCYCLOPEDIA</h1>
+                            <hr className="half-rule"/>
                             <h3>Categorizing Our Two-Wheeled Steeds</h3>
                         </section>
                     </div>
@@ -28,7 +28,7 @@ class Encyclopedia extends React.Component {
                     <Grid>
                         <Row>
                             <Col md={8} mdOffset={2}>
-                                <h2>SPORTBIKES</h2>
+                                <h2>SPORTBIKE</h2>
                                 <p>
                                     Engine engine rider RPM RPM wheel motorcycle racing rider. Wheel motorcycle wheel
                                     rider, exhaust racing motorcycle vehicle engine vehicle RPM racing vehicle. Racing
@@ -86,7 +86,7 @@ class Encyclopedia extends React.Component {
                     <Grid>
                         <Row>
                             <Col md={8} mdOffset={2}>
-                                <h2>CLASSICS</h2>
+                                <h2>CLASSIC</h2>
                                 <p>
                                     Engine engine rider RPM RPM wheel motorcycle racing rider. Wheel motorcycle wheel
                                     rider, exhaust racing motorcycle vehicle engine vehicle RPM racing vehicle. Racing
