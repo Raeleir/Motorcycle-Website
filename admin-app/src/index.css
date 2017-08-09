@@ -94,3 +94,16 @@ input {
 input, button {
     color: black;
 }
+
+.create {
+    margin-bottom: 50px;
+}
+
+.create-inputs input {
+    width: 250px;
+    margin: 10px;
+}
+
+.img-input {
+    width: 300px;
+}

@@ -7,7 +7,7 @@ class Bike extends React.Component {
         return (
             <Col md={4} className="spotlight">
                 <img className="img-responsive" alt="" src={this.props.bike.pic}/>
-                <input onChange={(event) => {
+                <input className="img-input" onChange={(event) => {
                         this.props.handleChange("pic", event);
                     }} placeholder="pic url" value={this.props.input.pic}
                 />
