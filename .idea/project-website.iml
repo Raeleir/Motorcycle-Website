@@ -4,7 +4,9 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="bountylist" />
+    <orderEntry type="module" module-name="axiomatic-forest-pictionary" />
+    <orderEntry type="module" module-name="axiomatic-forest-pictionary" />
+    <orderEntry type="module" module-name="canvas" />
   </component>
   <component name="TemplatesService">
     <option name="TEMPLATE_FOLDERS">

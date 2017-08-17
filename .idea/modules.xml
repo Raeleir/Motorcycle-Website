@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../exercises/bountylist/.idea/bountylist.iml" filepath="$PROJECT_DIR$/../exercises/bountylist/.idea/bountylist.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Sketch-Battle/.idea/axiomatic-forest-pictionary.iml" filepath="$PROJECT_DIR$/../Sketch-Battle/.idea/axiomatic-forest-pictionary.iml" />
+      <module fileurl="file://$USER_HOME$/Downloads/canvas/.idea/canvas.iml" filepath="$USER_HOME$/Downloads/canvas/.idea/canvas.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/project-website.iml" filepath="$PROJECT_DIR$/.idea/project-website.iml" />
     </modules>
   </component>
