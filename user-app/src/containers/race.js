@@ -1,11 +1,9 @@
 import React from "react";
 import { Grid, Row, Col } from "react-bootstrap";
-
 import { connect } from "react-redux";
 import * as actionCreators from "../actions/";
 import BikeList from "../components/bike-list";
 import EncycloNavbar from "../components/navbar";
-
 
 
 class Race extends React.Component {
@@ -15,9 +13,11 @@ class Race extends React.Component {
     render() {
         return (
             <div>
-                <div className="wrapper" style={
-                    {backgroundImage: "url('http://geodavephotography.com/images/motogp-wallpaper/37783534-motogp-wallpaper.jpg')"}
-                }>
+                <div className="wrapper"
+                     style={{backgroundImage:
+                        "url('http://geodavephotography.com/images/motogp-wallpaper/37783534-motogp-wallpaper.jpg')"
+                     }}
+                >
                     <div className="overlay">
                         <EncycloNavbar/>
                         <section>

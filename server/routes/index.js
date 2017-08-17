@@ -1,7 +1,6 @@
-const express = require("express");
-const Bike = require("../models/index.js");
-
-const bikeRouter = express.Router();
+const express = require("express"),
+    Bike = require("../models/index.js"),
+    bikeRouter = express.Router();
 
 
 bikeRouter.post("/", (req, res) => {
